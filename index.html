@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Cold or hot, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Stella S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favs/favicon-16x16.png">
+    <link rel="manifest" href="./favs/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie</title>
+  </head>
+  <center><body>
+    <script src="./js/script.js"></script>
+    <h1>Movie</h1>
+		<table>
+			<tr>
+				<td>
+					<h2>What movie should you be allowed to watch</h3>
+					<form action="javascript:displayNumber()">						
+						<label for="age">Enter in your age:</label>
+						<input type="number" id="age" min="0" placeholder="Enter age"><br><br>
+						<input type="submit" value="What can I see??">
+					</form>
+				</td>
+				<td>
+					<img src="./images/movies.jpg" alt="Movies" width="50%">
+				</td>
+			</tr>
+		</table>
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-results">
+			<div id="answer">
+			</div>
+		</div>
+  </body></center>
+</html>
