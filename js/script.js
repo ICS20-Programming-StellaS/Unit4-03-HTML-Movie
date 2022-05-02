@@ -21,15 +21,15 @@ function displayNumber () {
 
   	// if guess is right says correct
 	if (age >= MIN_R){
-		answer = "You can see an R rated movie"
+		answer = "You can see an R rated movie. ENOJOY, hoped you picked a good one!"
 	} 
   	// if guess is right says correct
 	else if (age >= MIN_PG){
-		answer = "You can see a PG_13sd movie"
+		answer = "Yay! Your older enough to watch PG-13 rated movie. Have Fun!"
 	} 
 	//if not says incorrect	
 	else {
-		answer = "You can go see a G rated movie"
+		answer = "Congrats! You can go see a G rated movie! 
 	}
 
   // display the results
