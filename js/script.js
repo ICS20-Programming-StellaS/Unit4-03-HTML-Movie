@@ -20,19 +20,24 @@ function displayNumber () {
 	let age = parseInt(document.getElementById('age').value)
 
 
-  	// if age is greater or euqal to 18
-	if (age >= MIN_R){
-		answer = "You can see an R rated movie. ENOJOY!"
-	} 
-  	// if age is greater or equal to 13
-	else if (age >= MIN_PG){
-		answer = "Yay! You're older enough to watch a PG-13 rated movie. Have Fun!"
-	} 
-	//if age is less than 13
-	else {
-		answer = "Congrats! You can go see a G rated movie, with a parent is recommended :)!" 
-	}
-
+  	// if age is greater or equal to 18
+  if (age >= 0) {
+    if (age == 0) {
+    answer= "Please enter an age in the box"
+      }
+    
+      else if (age >= MIN_R){
+      		answer = "You can see an R rated movie. ENJOY!"
+      	} else if (age >= MIN_PG){
+      		answer = "Yay! You're older enough to watch a PG-13 rated movie. Have Fun!"
+      	} else if (age >= MIN_G) {
+      		answer = "Congrats! You can go see a G - PG rated movie, with a parent is recommended :)!" 
+      	}
+      // if all conditions are false
+        else {
+          answer = "You aren't old enough to go to watch a movie alone. Soon though :)."
+        } 
+  }
   // display the results
   document.getElementById('answer').innerHTML = answer
 }
